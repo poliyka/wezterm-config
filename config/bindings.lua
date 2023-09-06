@@ -8,7 +8,7 @@ if platform.is_mac then
   mod.SUPER = 'SUPER'
   mod.SUPER_REV = 'SUPER|CTRL'
 elseif platform.is_win then
-  mod.SUPER = 'ALT'  -- to not conflict with Windows key shortcuts
+  mod.SUPER = 'ALT' -- to not conflict with Windows key shortcuts
   mod.SUPER_REV = 'ALT|CTRL'
 end
 
@@ -40,6 +40,8 @@ local keys = {
   -- window --
   -- spawn windows
   { key = 'n',   mods = mod.SUPER,     action = act.SpawnWindow },
+  { key = 'f',   mods = mod.SUPER_REV, action = act.ToggleFullScreen },
+  { key = 'c',   mods = mod.SUPER_REV, action = act.ActivateCopyMode },
 
   -- panes --
   -- panes: split panes
