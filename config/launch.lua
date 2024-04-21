@@ -10,7 +10,7 @@ if platform.is_win then
   options.launch_menu = {
     { label = 'PowerShell Desktop', args = { 'powershell' } },
     { label = 'Command Prompt',     args = { 'cmd' } },
-    { label = 'Ubuntu 20.04',       args = { 'wsl' } },
+    { label = 'Ubuntu 22.04',       args = { 'wsl' } },
     {
       label = 'Git Bash',
       args = { 'C:\\Users\\poliyka\\scoop\\apps\\git\\current\\bin\\bash.exe' },
